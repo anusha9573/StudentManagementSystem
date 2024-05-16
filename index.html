@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="index.js"></script>
+    <title>Student Management Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input {
+            margin: 5px;
+            padding: 10px;
+            width: 150px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .action-button {
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        .action-button:hover {
+            background-color: #007B9E;
+        }
+        .delete-button {
+            background-color: #f44336;
+        }
+        .delete-button:hover {
+            background-color: #e31e10;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <div>
+        <input type="text" id="roll" placeholder="Roll No">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="branch" placeholder="Branch">
+        <input type="text" id="gpa" placeholder="GPA">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>GPA</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="student-list">
+           
+        </tbody>
+    </table>
+</body>
+</html>

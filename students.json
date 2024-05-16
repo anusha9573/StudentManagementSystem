@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "roll": "101",
+      "name": "John Doe",
+      "branch": "Computer Science",
+      "gpa": "3.5",
+      "id": "f20e"
+    },
+    {
+      "roll": "102",
+      "name": "Jane Smith",
+      "branch": "Mechanical",
+      "gpa": "3.7",
+      "id": "6ea9"
+    },
+    {
+      "id": "dd03",
+      "roll": "103",
+      "name": "rqam",
+      "branch": "cse",
+      "gpa": "9.9"
+    }
+  ]
+}
